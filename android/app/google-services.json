@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "275976211906",
+    "project_id": "sementalfit2",
+    "storage_bucket": "sementalfit2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275976211906:android:0d7de2439975ce111c9a5b",
+        "android_client_info": {
+          "package_name": "com.semental.fit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275976211906-m5mpok90ie8r8aouejkubdfe2rin794h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.semental.fit",
+            "certificate_hash": "499a4417dfdd79b56e255a2d4862bacd005b9b53"
+          }
+        },
+        {
+          "client_id": "275976211906-c00dhto63a2omhl6d3d3pq011fp4d4me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKD2jAqVeuvmWRruLFz_epqcs_dobfHmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275976211906-c00dhto63a2omhl6d3d3pq011fp4d4me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

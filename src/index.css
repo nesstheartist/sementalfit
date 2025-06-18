@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Contenedor principal para todas las páginas */
+.app-container {
+  max-width: 480px; /* Ancho máximo para móviles */
+  margin: 0 auto; /* Centrado horizontal */
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 60px; /* Espacio para la navegación inferior */
+  background-color: black;
+}
+
+/* Asegurar que el contenido no se desborde en pantallas pequeñas */
+@media (max-width: 480px) {
+  .app-container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+} 

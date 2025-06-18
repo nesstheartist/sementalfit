@@ -1,0 +1,173 @@
+/* Estilos globales para la aplicación */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fondo y contenedor principal */
+.neon-luxury {
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+}
+
+/* Efecto de brillo neón */
+.neon-glow-luxury {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+/* Paneles y tarjetas */
+.neon-panel-luxury {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.neon-exercise-card-luxury {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.neon-exercise-card-luxury:hover {
+  border-color: rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+/* Botones */
+.neon-btn-luxury {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-btn-luxury:hover {
+  background: rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.neon-btn-active-luxury {
+  background: rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.neon-btn-add-luxury {
+  background: linear-gradient(45deg, #ffd700, #ffa500);
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.neon-btn-add-luxury:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Inputs y campos de formulario */
+.neon-input-luxury {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.neon-input-luxury:focus {
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+/* Timers y estados activos */
+.timer-active-luxury {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+/* Scrollbar personalizado */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Gradientes de texto */
+.text-gradient-gold {
+  color: #ffd700;
+  background: linear-gradient(90deg, #ffd700, #ffa500, #fffbe0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Animaciones */
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Efectos de hover */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Badges y etiquetas */
+.badge-premium {
+  background: rgba(0,0,0,0.5);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Contenedores de lista */
+.list-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas de set */
+.neon-set-card-luxury {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-set-card-luxury:hover {
+  border-color: rgba(255, 215, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
+} 

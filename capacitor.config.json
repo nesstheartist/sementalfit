@@ -1,0 +1,18 @@
+{
+  "appId": "com.sementalfit.app",
+  "appName": "Semental Fit",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true,
+    "allowNavigation": [
+      "*.firebaseio.com",
+      "*.googleapis.com",
+      "*.google.com"
+    ]
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+} 
