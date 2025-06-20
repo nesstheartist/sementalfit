@@ -10,6 +10,7 @@ Una aplicación de fitness moderna y gamificada que te ayuda a alcanzar tus obje
 - Tienda con descuentos por nivel
 - Ranking de usuarios
 - Interfaz moderna y atractiva
+  Sistema de personal trainner
 
 ## Requisitos
 
