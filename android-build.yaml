@@ -1,26 +1,39 @@
-name: Build Android APK
+name: Build Capacitor Android APK
 
 on:
   push:
     branches:
-      - main  # Cambia a la rama que uses
+      - main  # Cambia si tu rama es otra
 
 jobs:
   build:
-    name: Build APK on Ubuntu
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up JDK 11
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Set up Java
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Grant permission to execute gradlew
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build web assets
+        run: npm run build
+
+      - name: Copy web assets to Android
+        run: npx cap copy android
+
+      - name: Grant permission to gradlew
         run: chmod +x ./android/gradlew
 
       - name: Build APK
